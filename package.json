@@ -2,7 +2,7 @@
   "name": "atom-loves-you-tailwind-3-0-audio-player",
   "version": "2023.12.31-21.22.42",
   "license": "UNLICENSED",
-  "homepage": "https://codepen.io/Khristin-Schenk/pen/poOZdmG/df4db54120f632b6e48608636de44162",
+  "homepage": "https://atom-loves-you.com/",
   "scripts": {
     "build": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
     "serve": "gulp serve -f ./build/gulpfile.js --cwd ./ --continue",

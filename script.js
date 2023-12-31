@@ -43,8 +43,8 @@ Amplitude.init({
       artist: "Atom Loves You",
       album: "L'appel du vide",
       url:
-        "https://github.com/atom-loves-you/The-Call-of-the-Void/blob/main/m4a/Call%20of%20the%20Void%20-%20Three.m4a?raw=true",
-      cover_art_url: "https://assets.codepen.io/6566924/orange-star.svg"
+        "https://assets.codepen.io/6566924/Ad+Astra.mp3",
+      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
       name: "Tweeters, Woofers, Heavy Metal",
@@ -52,7 +52,7 @@ Amplitude.init({
       album: "L'appel du vide",
       url:
         "https://github.com/atom-loves-you/The-Call-of-the-Void/blob/main/Tweeters-Woofers-Heavy-Metal.mp3?raw=true",
-      cover_art_url: "https://assets.codepen.io/6566924/orange-star.svg"
+      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
       name: "Bitwise (Three)",
@@ -60,7 +60,7 @@ Amplitude.init({
       album: "L'appel du vide",
       url:
         "https://github.com/atom-loves-you/The-Call-of-the-Void/blob/main/m4a/Call%20of%20the%20Void%20.m4a?raw=true",
-      cover_art_url: "https://assets.codepen.io/6566924/orange-star.svg"
+      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
       name: "Dusk To Dawn",
@@ -68,7 +68,7 @@ Amplitude.init({
       album: "L'appel du vide",
       url:
         "https://github.com/atom-loves-you/The-Call-of-the-Void/blob/main/Call-of-the-Void.mp3?raw=true",
-      cover_art_url: "https://assets.codepen.io/6566924/orange-star.svg"
+      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
       name: "Anthem",
@@ -76,7 +76,7 @@ Amplitude.init({
       album: "L'appel du vide",
       url:
         "https://github.com/atom-loves-you/samples/blob/main/bass-samples/Funky-Drill-n-Bass-Loop.wav?raw=true",
-      cover_art_url: "https://assets.codepen.io/6566924/orange-star.svg"
+      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     }
   ]
 });
