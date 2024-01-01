@@ -51,7 +51,7 @@ Amplitude.init({
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
-        "https://github.com/atom-loves-you/main/blob/main/mp3/Ad%20Astra%201.mp3",
+        "https://assets.codepen.io/6566924/Ad+Astra+1.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
@@ -59,7 +59,7 @@ Amplitude.init({
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
-        "https://github.com/atom-loves-you/main/blob/main/mp3/Tweeters%2C%20Woofers%2C%20Heavy%20Metal%20(quick).mp3",
+        "https://assets.codepen.io/6566924/Tweeters%2C+Woofers%2C+Heavy+Metal+%28quick%29.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
@@ -67,7 +67,7 @@ Amplitude.init({
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
-        "https://github.com/atom-loves-you/main/blob/main/mp3/Otherkin.mp3",
+        "https://assets.codepen.io/6566924/Otherkin.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
@@ -75,7 +75,7 @@ Amplitude.init({
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
-        "https://github.com/atom-loves-you/main/blob/main/mp3/Ad%206.mp3",
+        "https://assets.codepen.io/6566924/Ad+6.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
@@ -83,7 +83,7 @@ Amplitude.init({
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
-        "https://github.com/atom-loves-you/main/blob/main/mp3/H%3Dh2pi.mp3",
+        "https://assets.codepen.io/6566924/H%3Dh2pi.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
@@ -91,7 +91,7 @@ Amplitude.init({
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
-        "https://github.com/atom-loves-you/main/blob/main/mp3/Ooo.mp3",
+        "https://assets.codepen.io/6566924/Ooo.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
@@ -99,7 +99,7 @@ Amplitude.init({
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
-        "https://github.com/atom-loves-you/main/blob/main/mp3/143%20Nao.mp3",
+        "https://assets.codepen.io/6566924/143+Nao.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
@@ -107,7 +107,7 @@ Amplitude.init({
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
-        "https://github.com/atom-loves-you/main/blob/main/mp3/Last%20track.mp3",
+        "https://assets.codepen.io/6566924/Last+track.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     }
   ]
