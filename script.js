@@ -47,36 +47,20 @@ Amplitude.init({
         "https://assets.codepen.io/6566924/Summer+of+George%28cleanup+live%29.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
-    //Ad Astra 1 (un-named)
-    {
-      name: "Track 02: Ad Astra 1 (un-named)",
-      artist: "Atom Loves You",
-      album: "Ad Astra per Aspera, 2023",
-      url:
-        "https://assets.codepen.io/6566924/Ad+Astra+1.mp3",
-      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
-    },
-    //Data is Destiny
+    //Data is Destiny,     
+    //Ad Astra 1
      {
-      name: "Track 03: Unnamed",
+      name: "Track 02: Unnamed",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
         "https://assets.codepen.io/6566924/Data+is+Destiny.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
-    //L'appel du vide
-         {
-      name: "Track 04: L'appel du vide",
-      artist: "Atom Loves You",
-      album: "Ad Astra per Aspera, 2023",
-      url:
-        "https://assets.codepen.io/6566924/L-appel+du+vide.mp3",
-      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
-    },
+    
     //Diabolus ex Machina
         {
-      name: "Track 05: (unnamed)",
+      name: "Track 03: (unnamed)",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
@@ -84,24 +68,16 @@ Amplitude.init({
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
-      name: "Track 0: Tweeters, Woofers, Heavy Metal",
+      name: "Track 04: Tweeters, Woofers, Heavy Metal",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
         "https://assets.codepen.io/6566924/Tweeters%2C+Woofers%2C+Heavy+Metal+%28quick%29.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
-    {
-      name: "Track 0: H=h2p",
-      artist: "Atom Loves You",
-      album: "Ad Astra per Aspera, 2023",
-      url:
-        "https://assets.codepen.io/6566924/H%3Dh2pi.mp3",
-      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
-    },
     //Ad Astra
      {
-      name: "Track 0: Ad Astra",
+      name: "Track 05: Ad Astra",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
@@ -110,19 +86,11 @@ Amplitude.init({
     },
     //Otherkin
     {
-      name: "Track 04: Otherkin",
+      name: "Track 06: Otherkin",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
         "https://assets.codepen.io/6566924/Otherkin.mp3",
-      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
-    },
-    {
-      name: "Track 05: (unnamed)",
-      artist: "Atom Loves You",
-      album: "Ad Astra per Aspera, 2023",
-      url:
-        "./",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     //L'appel du vide
@@ -152,9 +120,18 @@ Amplitude.init({
         "https://assets.codepen.io/6566924/143+Nao.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
+        //H=h2p
+        {
+          name: "Track 10: Unnamed",
+          artist: "Atom Loves You",
+          album: "Ad Astra per Aspera, 2023",
+          url:
+            "https://assets.codepen.io/6566924/H%3Dh2pi.mp3",
+          cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
+        },
     //Just Don't Write Bugs
         {
-      name: "Track 10: Just Don't Write Bugs",
+      name: "Track 11: Just Don't Write Bugs",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
@@ -163,7 +140,7 @@ Amplitude.init({
     },
     //Last Track
     {
-      name: "Track 11: Unnamed",
+      name: "Track 12: Unnamed",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
