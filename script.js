@@ -39,15 +39,7 @@ Amplitude.init({
   },
   songs: [
     {
-      name: "Track 01: Ad Astra",
-      artist: "Atom Loves You",
-      album: "Ad Astra per Aspera, 2023",
-      url:
-        "https://assets.codepen.io/6566924/Ad+Astra.mp3",
-      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
-    },
-    {
-      name: "Track 02: Ad Astra 1 (un-named)",
+      name: "Track 0: Ad Astra 1 (un-named)",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
@@ -55,11 +47,27 @@ Amplitude.init({
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
-      name: "Track 03: Tweeters, Woofers, Heavy Metal",
+      name: "Track 0: Tweeters, Woofers, Heavy Metal",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
         "https://assets.codepen.io/6566924/Tweeters%2C+Woofers%2C+Heavy+Metal+%28quick%29.mp3",
+      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
+    },
+    {
+      name: "Track 0: H=h2p",
+      artist: "Atom Loves You",
+      album: "Ad Astra per Aspera, 2023",
+      url:
+        "https://assets.codepen.io/6566924/H%3Dh2pi.mp3",
+      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
+    },
+     {
+      name: "Track 0: Ad Astra",
+      artist: "Atom Loves You",
+      album: "Ad Astra per Aspera, 2023",
+      url:
+        "https://assets.codepen.io/6566924/Ad+Astra.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
@@ -71,11 +79,11 @@ Amplitude.init({
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
-      name: "Track 05: Ad-6 (unnamed)",
+      name: "Track 05: (unnamed)",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera, 2023",
       url:
-        "https://assets.codepen.io/6566924/Ad+6.mp3",
+        "./",
       cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
     },
     {
