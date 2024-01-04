@@ -55,5 +55,8 @@
         "**/*.template.html"
       ]
     }
+  },
+  "dependencies": {
+    "amplitudejs": "^5.3.2"
   }
 }

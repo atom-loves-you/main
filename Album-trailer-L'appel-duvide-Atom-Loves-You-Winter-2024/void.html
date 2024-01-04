@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>body {
+  padding: 0;
+  margin-left: calc(50vw - (50vh / 4 * 3 - 5vh));
+  margin-top: 5vh;
+  width: 100%;
+  height: 100%;
+  background: lightgrey;
+  font-size: 2vh;
+  line-height: 2vh;
+  font-family: helvetica;
+  color: white;
+  overflow: hidden;
+  }
+
+a {
+ color: var(--fourth-bg-color);
+ text-decoration: none;
+    opacity: 0.7;
+    border-bottom: 0px solid grey;
+}
+
+a:hover {
+  opacity: 1;
+  border-bottom: 0px solid grey;
+}
+
+.box {
+  background: yellow !important;
+}
+
+.plakat {
+  position: absolute;
+  background: black;
+  width: calc(100vh / 4 * 3 - 100vh / 10);
+  height: calc( 100vh - 100vh / 10);
+  z-index: -2;
+  box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
+}
+
+.text-1-1 {
+  position: absolute;
+  top: calc(7vh);
+  left: calc(50vw - 50vh / 4 * 3 + 7vh);
+  z-index: -1;
+
+}
+
+.text-1 {
+  position: absolute;
+  bottom: calc(100vh / 3 * 2 - 2vh);
+  left: calc(50vw - 50vh / 4 * 3 + 7vh);
+  z-index: -1;
+}
+
+.text-2 {
+  position: absolute;
+  bottom: calc(100vh / 3 * 2 - 2vh);
+  left: calc(50vw - 50vh / 4 * 3 + 27vh);
+  z-index: -1;
+
+}
+
+.text-3 {
+  position: absolute;
+  bottom: calc(100vh / 3 * 2 - 2vh);
+  left: calc(50vw - 50vh / 4 * 3 + 49vh);
+  z-index: -1;
+}
+
+.text-4 {
+  position: absolute;
+  bottom: calc(100vh / 3 - 4vh);
+  left: calc(50vw - 50vh / 4 * 3 + 7vh);
+  z-index: -1;
+}
+
+.text-5 {
+  position: absolute;
+  bottom: calc(100vh / 3 - 4vh);
+  left: calc(50vw - 50vh / 4 * 3 + 49vh);
+  z-index: -1;
+}
+
+.n-narrow {
+  position: absolute;
+  width: 0.6vh;
+  height: 27.9vh;
+  top: calc(100vh / 3 + 2.8vh);
+  left: calc(50vw - 50vh / 4 * 3 + 8.4vh + 5vh);
+  background: white;
+  transform: skew(24.4deg, 0);
+}
+
+.credits {
+    position: absolute;
+    color: black;
+    font-size: 10px;
+    right: -175px;
+    bottom: 205px;
+    transform: rotate(-90deg);
+    height: 20px;
+    width: 400px;
+}
+  
+.gradient-1 {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    z-index: 200;
+    background-image: url(http://www.otonoveswiss.co.uk/img/gradient.png);
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    pointer-events: none;
+}
+
+.gradient-2 {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 200;
+    background-image: url(http://www.otonoveswiss.co.uk/img/gradient-2.png);
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    pointer-events: none;
+}
+
+.open-close {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 0px;
+    position: absolute;
+    transition: 0.5s;
+    left: calc(50% + 35vh);
+    top: 5.5vh;
+    background: transparent;
+}
+
+.open-close::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    background: black;
+    position: absolute;
+    top: 4px;
+    left: 24px;
+}
+
+.open-close:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: 24px;
+    left: 5px;
+}
+
+.open {
+  border: 2px solid white;
+  background: transparent;
+  transform: rotate(225deg);
+}
+
+.open::before {
+    background:white;
+}
+  
+.open::after {
+    background:white;
+}
+
+.infos {
+  color: white;
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+ font-size: 2.8vh;
+ line-height: 3.2vh;
+  padding: 20px;
+  font-weight: 100;
+    background: red;
+}
+
+.world2 {
+  background-color: black;
+}
+
+.world {
+  overflow: hidden;
+  position: absolute;
+  width: calc(100vh / 4 * 3 - 100vh / 10);
+  height: calc( 100vh - 100vh / 10);
+  top: calc(5vh);
+  left: calc(50vw - 50vh / 4 * 3 + 5vh);
+  background: black;
+  box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
+}
+
+.close {
+  display: none;
+}
+
+.close-closed {
+  display: block;
+}
+
+.credits-open {
+  color: white;
+}
+
+</style>
+</head>
+
+
+<body>
+L'appel du vide
+(The Call of the Void)
+Experimenting with elements of Breakbeat, IDM and Computer Science
+<div class="n-narrow"></div>
+<div class="infos close">
+<div class="world world2">
+<div style="padding:2vh; opacity: 0.8;">
+<div style="width:45%; padding-right: calc(5% - 4px); float: left;">
+<a href="#" target="_blank">Atom Loves You</a>
+</div>
+  
+<div style="width:39%; float: left; padding-left: 5%;">
+  <div style="padding-bottom:10px;"> L'appel du vide <br>Coming Winter, 2024<br></div>
+  <a href="https://www.facebook.com/events/986449394788474/" target="_blank">➀&nbsp;Thu&nbsp;23.&nbsp;March</a><br>
+    <a href="#" target="_blank">➁&nbsp;Fri&nbsp;24.&nbsp;March</a><br>
+<a href="#" target="_blank">➂&nbsp;Sat&nbsp;25.&nbsp;March</a><br><div style="padding-top:13px; bottom:2vh; position: absolute;"> 
+  <span style="opacity:0.7;"></span>
+  <br>
+<img src="http://www.otonoveswiss.co.uk/img/ph_logo_byline_en_white.gif" width="42%" height="auto" style="padding-right: 10px; padding-top: 0.2vh;">
+<img src="http://www.otonoveswiss.co.uk/img/tif-scf-white.gif" width="13%" height="auto" style="padding-right: 5px; padding-top: 0.5vh;">
+</div>
+
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="text-1-1">
+  Oto</br>
+  Nové </br>
+  Swiss</br>
+</div>
+
+<div class="text-1">
+  Oto</br>
+  Café</br>
+</div>
+
+<div class="text-2">
+  18-22</br>
+  Ashwin</br>
+  Street</br>
+</div>
+
+<div class="text-3">
+  Dalston</br>
+  London</br>
+  E8 3DL</br>
+</div>
+
+<div class="text-4">
+  Dalston</br>
+  London</br>
+  E8 3DL</br>
+</div>
+
+<div class="text-5">
+  Dalston</br>
+  London</br>
+  E8 3DL</br>
+</div>
+
+
+<div class="credits">Design/Concept: Studio Feixen, Sound: Janiv Oron, matter.js: Liam Brummitt</div>
+
+<div class="open-close"></div>
+
+<div class="plakat">
+  <div class="gradient-1"></div>
+  <div class="gradient-2"></div>
+</div>
+<script>$(".open-close").click(function () {
+  $(this).toggleClass("open");
+  $(this).toggleClass("no");
+  $(".close").toggleClass("close-closed");
+  $(".credits").toggleClass("credits-open");
+  $(".credits-a").toggleClass("credits-open");
+});
+
+$(".infos.close").click(function () {
+  $(".open-close").toggleClass("open");
+  $(".open-close").toggleClass("no");
+  $(".close").toggleClass("close-closed");
+  $(".credits").toggleClass("credits-open");
+  $(".credits-a").toggleClass("credits-open");
+});
+
+let Engine = Matter.Engine,
+  Render = Matter.Render,
+  Runner = Matter.Runner,
+  Body = Matter.Body,
+  World = Matter.World,
+  Mouse = Matter.Mouse,
+  Bodies = Matter.Bodies,
+  Common = Matter.Common,
+  Vertices = Matter.Vertices,
+  Events = Matter.Events,
+  Svg = Matter.Svg,
+  Query = Matter.Query,
+  Constraint = Matter.Constraint,
+  Composites = Matter.Composites,
+  MouseConstraint = Matter.MouseConstraint;
+
+// create an engine
+let engine = Engine.create();
+let idRAF = null;
+function init() {
+  let numm = Math.random();
+  $("canvas").remove();
+
+  cancelAnimationFrame(idRAF);
+  let width = ($(window).height() / 4) * 3 - $(window).height() / 10;
+  let width2 = $(window).width();
+  let height = $(window).height() - $(window).height() / 10;
+  let height2 = $(window).height();
+  let offset = height / 40;
+  // module aliases
+
+  engine.events = {};
+  World.clear(engine.world);
+  Engine.clear(engine);
+
+  engine = Engine.create();
+
+  engine.world.gravity.x = 0;
+  engine.world.gravity.y = 0;
+  let mouseConstraint = MouseConstraint.create(engine);
+  World.add(engine.world, mouseConstraint);
+
+  // create a renderer
+  let render = Render.create({
+    element: document.body,
+    engine: engine,
+    options: {
+      wireframes: false,
+      background: "transparent",
+      width: width,
+      height: height,
+      showDebug: false,
+      showBroadphase: false,
+      showBounds: false,
+      showVelocity: false,
+      showCollisions: false,
+      showSeparations: false,
+      showAxes: false,
+      showPositions: false,
+      showAngleIndicator: false,
+      showIds: false,
+      showShadows: false,
+      showVertexNumbers: false,
+      showConvexHulls: false,
+      showInternalEdges: false,
+      showMousePosition: false
+    }
+  });
+
+  // controls
+  var abstand1 = height / 8;
+  var ballklein = height / 250;
+  var ballgross = height / 40;
+  var farbe1 = "white";
+  var farbe2 = "#fafafa";
+  var farbe3 = "black";
+  var farbe4 = "#fbfbfb";
+  var farbe5 = "#fcfcfc";
+  var farbe6 = "#fdfdfd";
+  var redColor = "red",
+    greenColor = "blue";
+
+  var Body = Matter.Body;
+  var mouse = Mouse.create(render.canvas);
+  var mousecircle = Bodies.circle(width / 2, height / 2, height / 20, {
+    isSensor: true,
+    isStatic: true,
+    render: {
+      fillStyle: "transparent"
+    }
+  });
+  World.add(engine.world, [mousecircle]);
+
+  var mousecircle2 = Bodies.circle(width / 2, height / 2, height / 20, {
+    isStatic: true,
+    render: {
+      fillStyle: "transparent"
+    }
+  });
+  World.add(engine.world, [mousecircle2]);
+
+  // s-stops
+
+  var sstop1 = Bodies.circle(width / 4.2, (height / 5) * 3.8, height / 20, {
+    isStatic: true,
+    render: {
+      fillStyle: "transparent"
+    }
+  });
+  World.add(engine.world, [sstop1]);
+
+  var sstop2 = Bodies.circle(width / 10, (height / 5) * 4.3, height / 20, {
+    isStatic: true,
+    render: {
+      fillStyle: "transparent"
+    }
+  });
+  World.add(engine.world, [sstop2]);
+
+  var sstop3 = Bodies.circle(width / 1.1, (height / 5) * 3.8, height / 20, {
+    isStatic: true,
+    render: {
+      fillStyle: "transparent"
+    }
+  });
+  World.add(engine.world, [sstop3]);
+
+  var sstop4 = Bodies.circle(width / 1.8, (height / 5) * 4.3, height / 20, {
+    isStatic: true,
+    render: {
+      fillStyle: "transparent"
+    }
+  });
+  World.add(engine.world, [sstop4]);
+
+  var sstop5 = Bodies.circle(width / 1.45, (height / 5) * 4, height / 30, {
+    isStatic: true,
+    render: {
+      fillStyle: "transparent"
+    }
+  });
+  World.add(engine.world, [sstop5]);
+
+  var sstop6 = Bodies.circle(width / 1.28, (height / 5) * 4.3, height / 30, {
+    isStatic: true,
+    render: {
+      fillStyle: "transparent"
+    }
+  });
+  World.add(engine.world, [sstop6]);
+
+  // o1
+
+  for (let i = 0; i < 15; i++) {
+    var ball = Bodies.circle(width / 4, height / 6, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 4, y: height / 5.5 },
+      bodyB: ball,
+      length: abstand1 * 1.2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 5; i++) {
+    var ball = Bodies.circle(width / 4, height / 6, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 4, y: height / 5.5 },
+      bodyB: ball,
+      length: abstand1 / 2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 4; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 25);
+    var ball = Bodies.circle(width / 4, height / 6, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 4, y: height / 5.5 },
+      bodyB: ball,
+      length: abstand1 / 1.5,
+      stiffness: 0.01,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 5; i++) {
+    var ball = Bodies.rectangle(
+      width / 6,
+      height / 4,
+      height / 200,
+      1 + (Math.random() * height) / 6,
+      {
+        render: {
+          fillStyle: farbe6,
+          strokeStyle: farbe3,
+          lineWidth: 1
+        }
+      }
+    );
+    var constraint = Constraint.create({
+      pointA: { x: width / 4, y: height / 5.5 },
+      bodyB: ball,
+      length: abstand1,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  // o2
+  for (let i = 0; i < 15; i++) {
+    var ball = Bodies.circle((width / 4) * 3, height / 6, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 4) * 3, y: height / 5.5 },
+      bodyB: ball,
+      length: abstand1 * 1.2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 8; i++) {
+    var ball = Bodies.circle((width / 4) * 3, height / 6, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 4) * 3, y: height / 5.5 },
+      bodyB: ball,
+      length: abstand1 / 2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 25);
+    var ball = Bodies.circle((width / 4) * 3, height / 6, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 4) * 3, y: height / 5.5 },
+      bodyB: ball,
+      length: abstand1 / 2,
+      stiffness: 0.01,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 3; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 25);
+    var ball = Bodies.circle((width / 4) * 3, height / 6, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 4) * 3, y: height / 5.5 },
+      bodyB: ball,
+      length: abstand1,
+      stiffness: 0.01,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 3; i++) {
+    var ball = Bodies.rectangle(
+      (width / 4) * 3,
+      height / 5.5,
+      height / 200,
+      1 + (Math.random() * height) / 6,
+      {
+        render: {
+          fillStyle: farbe6,
+          strokeStyle: farbe3,
+          lineWidth: 1
+        }
+      }
+    );
+    var constraint = Constraint.create({
+      pointA: { x: (width / 4) * 3, y: height / 5.5 },
+      bodyB: ball,
+      length: abstand1,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  // o3
+
+  for (let i = 0; i < 15; i++) {
+    var ball = Bodies.circle(width / 2 - width / 20, height / 2, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 2 - width / 20, y: height / 2 },
+      bodyB: ball,
+      length: abstand1,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 5; i++) {
+    var ball = Bodies.circle(width / 2 - width / 20, height / 2, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 2 - width / 20, y: height / 2 },
+      bodyB: ball,
+      length: abstand1 / 2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 6; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 25);
+    var ball = Bodies.circle(width / 2 - width / 20, height / 2, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 2 - width / 20, y: height / 2 },
+      bodyB: ball,
+      length: abstand1,
+      stiffness: 0.01,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 25);
+    var ball = Bodies.circle(width / 2 - width / 20, height / 2, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 2 - width / 20, y: height / 2 },
+      bodyB: ball,
+      length: abstand1 / 2,
+      stiffness: 0.01,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 4; i++) {
+    var ball = Bodies.rectangle(
+      width / 2 - width / 20,
+      height / 2,
+      height / 200,
+      1 + (Math.random() * height) / 6,
+      {
+        render: {
+          fillStyle: farbe6,
+          strokeStyle: farbe3,
+          lineWidth: 1
+        }
+      }
+    );
+    var constraint = Constraint.create({
+      pointA: { x: width / 2 - width / 20, y: height / 2 },
+      bodyB: ball,
+      length: abstand1,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  // s1
+  var abstand2 = height / 13.9;
+  for (let i = 0; i < 10; i++) {
+    var ball = Bodies.circle(width / 6.9, (height / 8) * 5, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 6.9, y: (height / 8) * 6 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  var abstand2 = height / 13.9;
+  for (let i = 0; i < 3; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 45);
+    var ball = Bodies.circle(width / 6.9, (height / 8) * 5, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 6.9, y: (height / 8) * 6 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.01,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 10; i++) {
+    var ball = Bodies.circle(width / 6.9, (height / 20) * 17.8, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 6.9, y: (height / 20) * 17.8 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 10; i++) {
+    var ball = Bodies.circle(width / 6.9, (height / 20) * 17.8, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 6.9, y: (height / 20) * 17.8 },
+      bodyB: ball,
+      length: abstand2 / 2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 45);
+    var ball = Bodies.circle(width / 6.9, (height / 20) * 17.8, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: width / 6.9, y: (height / 20) * 17.8 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 3; i++) {
+    var ball = Bodies.rectangle(
+      width / 8,
+      (height / 20) * 14,
+      height / 200,
+      1 + (Math.random() * height) / 8,
+      {
+        render: {
+          fillStyle: farbe6,
+          strokeStyle: farbe3,
+          lineWidth: 1
+        }
+      }
+    );
+    var constraint = Constraint.create({
+      pointA: { x: width / 6.9, y: (height / 20) * 17.8 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  // s2
+
+  for (let i = 0; i < 10; i++) {
+    var ball = Bodies.circle((width / 6) * 5.1, (height / 8) * 6, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 5.1, y: (height / 8) * 6 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 10; i++) {
+    var ball = Bodies.circle((width / 6) * 5.1, (height / 8) * 6, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 5.1, y: (height / 8) * 6 },
+      bodyB: ball,
+      length: abstand2 / 2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 45);
+    var ball = Bodies.circle((width / 6) * 5.1, (height / 8) * 6, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 5.1, y: (height / 8) * 6 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 10; i++) {
+    var ball = Bodies.circle((width / 6) * 5.1, (height / 20) * 18, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 5.1, y: (height / 20) * 18 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 45);
+    var ball = Bodies.circle((width / 6) * 5.1, (height / 20) * 18, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 5.1, y: (height / 20) * 18 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    var ball = Bodies.rectangle(
+      (width / 6) * 5.1,
+      (height / 20) * 15,
+      height / 200,
+      1 + (Math.random() * height) / 8,
+      {
+        render: {
+          fillStyle: farbe6,
+          strokeStyle: farbe3,
+          lineWidth: 1
+        }
+      }
+    );
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 5.1, y: (height / 20) * 18 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  // s3
+
+  for (let i = 0; i < 10; i++) {
+    var ball = Bodies.circle((width / 6) * 3.8, (height / 8) * 6, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 3.8, y: (height / 8) * 6 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    var ball = Bodies.rectangle(
+      (width / 6) * 3.8,
+      (height / 20) * 17,
+      height / 200,
+      1 + (Math.random() * height) / 8,
+      {
+        render: {
+          fillStyle: farbe6,
+          strokeStyle: farbe3,
+          lineWidth: 1
+        }
+      }
+    );
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 3.8, y: (height / 8) * 6 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 45);
+    var ball = Bodies.circle((width / 6) * 3.8, (height / 8) * 6, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 3.8, y: (height / 8) * 6 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.01,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 10; i++) {
+    var ball = Bodies.circle((width / 6) * 3.8, (height / 20) * 18, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 3.8, y: (height / 20) * 18 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 10; i++) {
+    var ball = Bodies.circle((width / 6) * 3.8, (height / 20) * 18, ballklein, {
+      frictionAir: 0,
+      render: {
+        fillStyle: farbe1,
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 3.8, y: (height / 20) * 18 },
+      bodyB: ball,
+      length: abstand2 / 2,
+      stiffness: 0.1,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    let radius = Math.round(10 + (Math.random() * height) / 45);
+    var ball = Bodies.circle((width / 6) * 3.8, (height / 20) * 18, radius, {
+      frictionAir: 0,
+      render: {
+        fillStyle: [farbe4, farbe2, farbe5][
+          Math.round(Math.random() * 3 - 0.5)
+        ],
+        strokeStyle: farbe3,
+        lineWidth: 1
+      }
+    });
+    var constraint = Constraint.create({
+      pointA: { x: (width / 6) * 3.8, y: (height / 20) * 18 },
+      bodyB: ball,
+      length: abstand2,
+      stiffness: 0.01,
+      render: { visible: false }
+    });
+    World.add(engine.world, [ball, constraint]);
+  }
+
+  // Linien Weiss
+  var box = Bodies.rectangle(
+    width / 2,
+    height / 6 + height / 80,
+    height / 200,
+    height / 3 - height / 40,
+    {
+      isStatic: true,
+      render: {
+        fillStyle: farbe1
+      }
+    }
+  );
+  World.add(engine.world, [box]);
+
+  var box2 = Bodies.rectangle(
+    width / 2,
+    (height / 6) * 5 - height / 80,
+    height / 200,
+    height / 3 - height / 40,
+    {
+      isStatic: true,
+      render: {
+        fillStyle: farbe1
+      }
+    }
+  );
+  World.add(engine.world, [box2]);
+
+  var w1 = Bodies.rectangle(
+    width / 3,
+    (height / 6) * 5 - height / 80,
+    height / 200,
+    height / 3 - height / 40,
+    {
+      isStatic: true,
+      render: {
+        fillStyle: farbe1
+      }
+    }
+  );
+  World.add(engine.world, [w1]);
+
+  var w2 = Bodies.rectangle(
+    width / 3 + width / 40,
+    (height / 6) * 5 - height / 80,
+    height / 200,
+    height / 3 - height / 40,
+    {
+      isStatic: true,
+      render: {
+        fillStyle: farbe1
+      }
+    }
+  );
+  World.add(engine.world, [w2]);
+
+  var w3 = Bodies.rectangle(
+    width / 3 + (width / 40) * 2,
+    (height / 6) * 5 - height / 80,
+    height / 200,
+    height / 3 - height / 40,
+    {
+      isStatic: true,
+      render: {
+        fillStyle: farbe1
+      }
+    }
+  );
+  World.add(engine.world, [w3]);
+
+  var w4 = Bodies.rectangle(
+    width / 3 + (width / 40) * 3,
+    (height / 6) * 5 - height / 80,
+    height / 200,
+    height / 3 - height / 40,
+    {
+      isStatic: true,
+      render: {
+        fillStyle: farbe1
+      }
+    }
+  );
+  World.add(engine.world, [w4]);
+
+  var v1 = Bodies.rectangle(
+    (width / 5) * 3 + (width / 40) * 3,
+    height / 2,
+    height / 200,
+    height / 3 - height / 40,
+    {
+      isStatic: true,
+      render: {
+        fillStyle: farbe1
+      }
+    }
+  );
+  World.add(engine.world, [v1]);
+
+  var v2 = Bodies.rectangle(
+    (width / 5) * 3 + (width / 40) * 4,
+    height / 2,
+    height / 200,
+    height / 3 - height / 40,
+    {
+      isStatic: true,
+      render: {
+        fillStyle: farbe1
+      }
+    }
+  );
+  World.add(engine.world, [v2]);
+
+  // Linien Weiss
+  World.add(engine.world, [
+    mousecircle,
+    // T
+    Bodies.rectangle(width / 2, height / 40, width / 3, height / 200, {
+      isStatic: true,
+      render: {
+        fillStyle: farbe1
+      }
+    }),
+    // E1
+    Bodies.rectangle(
+      width - width / 8 - height / 80,
+      height / 3 + height / 40,
+      width / 4 - height / 40,
+      height / 200,
+      {
+        isStatic: true,
+        render: {
+          fillStyle: farbe1
+        }
+      }
+    ),
+    // E2
+    Bodies.rectangle(
+      width - width / 8 - height / 80,
+      height / 2,
+      width / 4 - height / 40,
+      height / 200,
+      {
+        isStatic: true,
+        render: {
+          fillStyle: farbe1
+        }
+      }
+    ),
+    // E3
+    Bodies.rectangle(
+      width - width / 8 - height / 80,
+      height / 1.5 - height / 40,
+      width / 4 - height / 40,
+      height / 200,
+      {
+        isStatic: true,
+        render: {
+          fillStyle: farbe1
+        }
+      }
+    ),
+    // N
+    Bodies.rectangle(
+      height / 40,
+      height / 2,
+      height / 200,
+      height / 3 - height / 40,
+      {
+        isStatic: true,
+        render: {
+          fillStyle: farbe1
+        }
+      }
+    ),
+
+    Bodies.rectangle(
+      width / 4 - height / 80,
+      height / 2,
+      height / 200,
+      height / 3 - height / 40,
+      {
+        isStatic: true,
+        render: {
+          fillStyle: farbe1
+        }
+      }
+    ),
+
+    // Rahmen
+
+    Bodies.rectangle(width / 2, height - offset + 100, width, 200, {
+      isStatic: true,
+      render: {
+        fillStyle: "transparent"
+      }
+    }),
+    Bodies.rectangle(width / 2, offset - 100, width, 200, {
+      isStatic: true,
+      render: {
+        fillStyle: "transparent"
+      }
+    }),
+    Bodies.rectangle(offset - 100, height / 2, 200, height, {
+      isStatic: true,
+      render: {
+        fillStyle: "transparent"
+      }
+    }),
+    Bodies.rectangle(width - offset + 100, height / 2, 200, height, {
+      isStatic: true,
+      render: {
+        fillStyle: "transparent"
+      }
+    })
+  ]);
+
+  // Collosion Events
+
+  Events.on(engine, "collisionStart", function (event) {
+    var pairs = event.pairs;
+    var audioElement = document.createElement("audio");
+    audioElement.setAttribute(
+      "src",
+      "http://www.damarcello.ch/img/xylophon-5.mp3"
+    );
+    var audioElement2 = document.createElement("audio");
+    audioElement2.setAttribute(
+      "src",
+      "http://www.damarcello.ch/img/xylophon-2.mp3"
+    );
+    var audioElement3 = document.createElement("audio");
+    audioElement3.setAttribute(
+      "src",
+      "http://www.damarcello.ch/img/xylophon-3.mp3"
+    );
+    var audioElement4 = document.createElement("audio");
+    audioElement4.setAttribute(
+      "src",
+      "http://www.damarcello.ch/img/xylophon-4.mp3"
+    );
+    var audioElement5 = document.createElement("audio");
+    audioElement5.setAttribute(
+      "src",
+      "http://www.damarcello.ch/img/xylophon-1.mp3"
+    );
+
+    for (var i = 0, j = pairs.length; i != j; ++i) {
+      var pair = pairs[i];
+
+      // sound blue balls
+      if (pair.bodyA === mousecircle) {
+        if (pair.bodyB.render.fillStyle == farbe2) {
+          audioElement2.play();
+          audioElement2.currentTime = 0;
+        }
+      }
+
+      // sound pink balls
+      if (pair.bodyA === mousecircle) {
+        if (pair.bodyB.render.fillStyle == farbe4) {
+          audioElement3.play();
+          audioElement3.currentTime = 0;
+        }
+      }
+
+      // sound grey balls
+      if (pair.bodyA === mousecircle) {
+        if (pair.bodyB.render.fillStyle == farbe5) {
+          audioElement4.play();
+          audioElement4.currentTime = 0;
+        }
+      }
+
+      // sound sticks
+      if (pair.bodyA === mousecircle) {
+        if (pair.bodyB.render.fillStyle == farbe6) {
+          audioElement5.play();
+          audioElement5.currentTime = 0;
+        }
+      }
+
+      // sound white balls
+      if (pair.bodyA === mousecircle) {
+        if (pair.bodyB.render.fillStyle == "white") {
+          audioElement.play();
+          audioElement.currentTime = 0;
+        }
+      }
+    }
+  });
+
+  // Events.on(engine, 'collisionEnd', function(event) {
+  //  var pairs = event.pairs;
+
+  //for (var i = 0, j = pairs.length; i != j; ++i) {
+  //   var pair = pairs[i];
+
+  // color change blue balls
+  //  if (pair.bodyA === mousecircle) {
+  //     if (pair.bodyB.render.fillStyle == "red") {
+  //    }
+
+  // }
+  // }
+  //  });
+
+  // run the engine
+  Engine.run(engine);
+
+  // run the renderer
+  Render.run(render);
+
+  let inc = 0;
+
+  engine.world.gravity.y = 0;
+
+  Body.rotate(w1, -0.06);
+  Body.rotate(w2, 0.06);
+  Body.rotate(w3, -0.06);
+  Body.rotate(w4, 0.06);
+  Body.rotate(v1, -0.06);
+  Body.rotate(v2, 0.06);
+
+  function update() {
+    if (mouse.position.x < offset || mouse.position.x > width - offset) {
+    }
+
+    Body.translate(mousecircle, {
+      x: (mouse.position.x - mousecircle.position.x) * 0.25,
+      y: (mouse.position.y - mousecircle.position.y) * 0.25
+    });
+
+    Body.translate(mousecircle2, {
+      x: (mouse.position.x - mousecircle2.position.x) * 0.25,
+      y: (mouse.position.y - mousecircle2.position.y) * 0.25
+    });
+
+    if (inc > 8) {
+      // engine.world.gravity.x = Math.cos(inc / 20)
+      // engine.world.gravity.y = Math.sin(inc / 40)
+      // engine.world.gravity.x = mouse.position.x / width - 0.5
+      // engine.world.gravity.y = mouse.position.y / height - 0.5
+    }
+    inc++;
+    idRAF = requestAnimationFrame(update.bind(this));
+  }
+  update();
+}
+init();
+
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function () {
+    var context = this,
+      args = arguments;
+    var later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+
+$(window).on(
+  "resize",
+  debounce(
+    function () {
+      init();
+    }.bind(this),
+    1
+  )
+);
+</script>
+</body>
+</html>

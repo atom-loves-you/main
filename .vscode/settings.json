@@ -183,5 +183,19 @@
   "scm.diffDecorationsGutterPattern": {
     "modified": false
   },
-  "scm.diffDecorationsGutterWidth": 1
+  "scm.diffDecorationsGutterWidth": 1,
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.filePath": "off",
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.symbolSortOrder": "type",
+  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.showVariables": false,
+  "breadcrumbs.showTypeParameters": false,
+  "breadcrumbs.showStructs": false,
+  "breadcrumbs.showStrings": false,
+  "breadcrumbs.showProperties": false,
+  "breadcrumbs.showOperators": false,
+  "breadcrumbs.showObjects": false,
+  "breadcrumbs.showNumbers": false
 }
