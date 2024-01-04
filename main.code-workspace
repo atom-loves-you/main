@@ -1,0 +1,70 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"editor.experimentalWhitespaceRendering": "off",
+		"editor.renderWhitespace": "none",
+		"editor.renderFinalNewline": "off",
+		"editor.renderLineHighlight": "none",
+		"editor.minimap.renderCharacters": false,
+		"workbench.tree.renderIndentGuides": "none",
+		"diffEditor.renderIndicators": false,
+		"diffEditor.renderMarginRevertIcon": false,
+		"diffEditor.renderSideBySide": false,
+		"editor.glyphMargin": false,
+		"editor.guides.indentation": false,
+		"breadcrumbs.icons": false,
+		"explorer.compactFolders": false,
+		"outline.icons": false,
+		"terminal.integrated.customGlyphs": false,
+		"notebook.compactView": false,
+		"notebook.consolidatedOutputButton": false,
+		"notebook.globalToolbar": true,
+		"diffEditor.experimental.showEmptyDecorations": false,
+		"workbench.editor.decorations.colors": false,
+		"workbench.editor.decorations.badges": false,
+		"explorer.decorations.badges": false,
+		"explorer.decorations.colors": false,
+		"search.decorations.badges": false,
+		"search.decorations.colors": false,
+		"scm.diffDecorationsGutterAction": "none",
+		"scm.diffDecorationsGutterPattern": {
+			"modified": false
+		},
+		"editor.unicodeHighlight.includeComments": false,
+		"problems.decorations.enabled": false,
+		"git.decorations.enabled": false,
+		"testing.gutterEnabled": false,
+		"terminal.integrated.shellIntegration.enabled": true,
+		"scm.diffDecorationsGutterWidth": 1,
+		"debug.showInlineBreakpointCandidates": false,
+		"scm.diffDecorations": "none",
+		"editor.unicodeHighlight.includeStrings": false,
+		"editor.unicodeHighlight.nonBasicASCII": false,
+		"editor.unicodeHighlight.invisibleCharacters": false,
+		"editor.unicodeHighlight.ambiguousCharacters": false,
+		"explorer.sortOrderLexicographicOptions": "unicode",
+		"explorer.sortOrder": "foldersNestsFiles",
+		"editor.matchBrackets": "never",
+		"editor.bracketPairColorization.enabled": false,
+		"editor.selectionHighlight": false,
+		"editor.guides.highlightActiveIndentation": false,
+		"editor.guides.highlightActiveBracketPair": false,
+		"editor.foldingHighlight": false,
+		"editor.copyWithSyntaxHighlighting": false,
+		"editor.occurrencesHighlight": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"eg2.vscode-npm-script",
+			"pkief.material-icon-theme",
+			"bierner.markdown-preview-github-styles",
+			"ritwickdey.liveserver",
+			"daltonmenezes.aura-theme"
+		]
+	}
+}
