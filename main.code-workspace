@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"breadcrumbs.enabled": false,
+		"breadcrumbs.filePath": "off",
+		"breadcrumbs.icons": false,
+		"breadcrumbs.symbolPath": "off"
+	}
+}
