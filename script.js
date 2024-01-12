@@ -41,7 +41,7 @@ Amplitude.init({
   songs: [  
 
 /* Tweeters, Woofers, Heavy Metal - Passed Test-01 12 Jan 2024 */ 
-{name: "Tweeters, Woofers, Heavy Metal",
+{name: "01 Tweeters, Woofers, Heavy Metal",
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
@@ -49,25 +49,27 @@ cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
 
 
 /* Summer Of George - Passed Test-01 12 Jan 2024 */ 
-{name: "Summer Of George",
+{name: "02 Summer Of George",
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"}
 
 /* Otherkin - Test-01 12 Jan 2024 */ 
-{name: "Otherkin - Test",
+{name: "03 Otherkin - Test",
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/Otherkin.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
 
 
-/* ℏ = h/2π - Passed Test-01 12 Jan 2024 */
-{name: "ℏ = h/2π",
+/* Diabolus ex Machina- Test-01 12 Jan 2024 */
+/* NOTE: This track has also been called: 1. Diabolus ex Machina, 2. Call of the Void, and 3. Ad5 */
+/* I am Using file: `Diabolus ex Machina-Updated-‎January ‎12, ‎2024.wav/mp3` in the playlist as of the 12th of Jan, 2024.*/
+{name: "04 Diabolus ex Machina",
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
-url:"https://assets.codepen.io/6566924/%E2%84%8F+%3D+h%2F2%CF%80.mp3",
+url:"https://assets.codepen.io/6566924/Diabolus-ex-Machina-Updated-Spring-2024-%E2%80%8EJan-12-2024.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
 
 
