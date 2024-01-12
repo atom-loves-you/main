@@ -53,7 +53,7 @@ cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
-cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"}
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
 
 /* Otherkin - Test-01 12 Jan 2024 */ 
 {name: "03 Otherkin - Test",
@@ -81,7 +81,6 @@ url:"https://assets.codepen.io/6566924/%E2%84%8F+%3D+h%2F2%CF%80.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
 
 
-
 /* Lo-fi - Passed Test-01 12 Jan 2024 */
 {name: "SORT-Lo-fi",
 artist: "Atom Loves You",
@@ -95,6 +94,7 @@ artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/My+Song+36.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"}
+
 ]
 });
 window.onkeydown = function (e) {
