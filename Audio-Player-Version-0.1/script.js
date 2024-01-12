@@ -37,23 +37,75 @@ Amplitude.init({
       slider.style.backgroundSize = percentage + "% 100%";
     }
   },
+
   songs: [  
-/* Tweeters, Woofers, Heavy Metal */ 
+
+/* Tweeters, Woofers, Heavy Metal - Passed Test-01 12 Jan 2024 */ 
 {name: "Tweeters, Woofers, Heavy Metal",
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
 
-/* ℏ = h/2π */
+
+/* Summer Of George - Passed Test-01 12 Jan 2024 */ 
+{name: "Summer Of George",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"}
+
+/* Otherkin - Test-01 12 Jan 2024 */ 
+{name: "Otherkin - Test",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/Otherkin.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
+/* ℏ = h/2π - Passed Test-01 12 Jan 2024 */
 {name: "ℏ = h/2π",
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/%E2%84%8F+%3D+h%2F2%CF%80.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
+/* ℏ = h/2π - Passed Test-01 12 Jan 2024 */
+{name: "ℏ = h/2π",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/%E2%84%8F+%3D+h%2F2%CF%80.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
+
+
+
+/* Lo-fi - Passed Test-01 12 Jan 2024 */
+{name: "SORT-Lo-fi",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/Lo+fi+.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+/* MySong-36- Passed Test-01 12 Jan 2024 */
+{name: "SORT-MySong-36",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/My+Song+36.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"}
+
+
+
+
 ]
 });
-
+https://assets.codepen.io/6566924/Ad+Astra.mp3
 window.onkeydown = function (e) {
   return !(e.keyCode == 32);
 };
+
+
+/* https://assets.codepen.io/6566924/Lo+fi+.mp3 */
+/* https://assets.codepen.io/6566924/Call+of+the+Void+-+not+actually+-+rename+this.mp3 */
