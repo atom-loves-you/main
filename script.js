@@ -44,13 +44,14 @@ Amplitude.init(
     songs: [
 
       //Tweeters, Woofers, Heavy Metal
-      {
-        name: "Track 01: Tweeters, Woofers, Heavy Metal",
-        artist: "Atom Loves You",
-        album: "Ad Astra per Aspera, 2023",
-        url: "https://assets.codepen.io/6566924/Tweeters%2C+Woofers%2C+Heavy+Metal+%28quick%29.mp3",
-        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-      },
+          {
+      name: "Tweeters, Woofers, Heavy Metal",
+      artist: "Atom Loves You",
+      album: "Ad Astra per Aspera",
+      url:
+        "https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
+      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
+    },
 
       //Summer of George
       {
@@ -79,14 +80,15 @@ Amplitude.init(
         cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
-      //H=h2p
+      //ℏ = h/2π
       {
-        name: "Track 05: H=h2p",
-        artist: "Atom Loves You",
-        album: "Ad Astra per Aspera, 2023",
-        url: "https://assets.codepen.io/6566924/H%3Dh2pi.mp3",
-        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-      },
+      name: "ℏ = h/2π",
+      artist: "Atom Loves You",
+      album: "Ad Astra per Aspera",
+      url:
+        "https://assets.codepen.io/6566924/%E2%84%8F+%3D+h%2F2%CF%80.mp3",
+      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
+    },
 
       //Just Don't Write Bugs
       {
