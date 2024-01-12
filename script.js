@@ -48,15 +48,16 @@ url:"https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
 
 
-/* Summer Of George - Passed Test-01 12 Jan 2024 */ 
-{name: "02 Summer Of George",
+/* The Summer Of George - Passed Test-01 12 Jan 2024 */ 
+{name: "02 The Summer Of George",
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
-url:"https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
+url:"https://assets.codepen.io/6566924/The-Summer-of-George.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
 
+
 /* Otherkin - Test-01 12 Jan 2024 */ 
-{name: "03 Otherkin - Test",
+{name: "03 Otherkin",
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/Otherkin.mp3",
@@ -74,11 +75,75 @@ cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
 
 
 /* ℏ = h/2π - Passed Test-01 12 Jan 2024 */
-{name: "ℏ = h/2π",
+{name: "05 ℏ = h/2π",
 artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/%E2%84%8F+%3D+h%2F2%CF%80.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+/* Just Don't Write Bugs - Passed Test-01 12 Jan 2024 */
+{name: "06 Just Don't Write Bugs",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/Just-Don-t-Write-Bugs.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
+/* Ad Astra - Passed Test-01 12 Jan 2024 */
+{name: "07 Ad Astra",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"./",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+/* L'appel du Vide (The Call of the Void) - Passed Test-01 12 Jan 2024 */
+{name: "08 L'appel du Vide (The Call of the Void)",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/L-appel+du+Vide.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
+/* Title - Passed Test-01 12 Jan 2024 */
+{name: "09 Track Title",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"./",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
+/* Title - Passed Test-01 12 Jan 2024 */
+{name: "10 Track Title",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"./",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
+/* Title - Passed Test-01 12 Jan 2024 */
+{name: "11 Track Title",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"./",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
+/* Title - Passed Test-01 12 Jan 2024 */
+{name: "12 Track Title",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"./",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
+/* Title - Passed Test-01 12 Jan 2024 */
+{name: "13 Track Title",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"./",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+
 
 
 /* Lo-fi - Passed Test-01 12 Jan 2024 */
