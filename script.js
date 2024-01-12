@@ -80,8 +80,6 @@ cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
 
 
 
-
-
 /* Lo-fi - Passed Test-01 12 Jan 2024 */
 {name: "SORT-Lo-fi",
 artist: "Atom Loves You",
@@ -95,13 +93,8 @@ artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/My+Song+36.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"}
-
-
-
-
 ]
 });
-https://assets.codepen.io/6566924/Ad+Astra.mp3
 window.onkeydown = function (e) {
   return !(e.keyCode == 32);
 };
