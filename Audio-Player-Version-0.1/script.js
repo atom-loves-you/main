@@ -37,24 +37,21 @@ Amplitude.init({
       slider.style.backgroundSize = percentage + "% 100%";
     }
   },
-  songs: [
-    {
-      name: "Tweeters, Woofers, Heavy Metal",
-      artist: "Atom Loves You",
-      album: "Ad Astra per Aspera",
-      url:
-        "https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
-      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
-    },
-   {
-      name: "ℏ = h/2π",
-      artist: "Atom Loves You",
-      album: "Ad Astra per Aspera",
-      url:
-        "https://assets.codepen.io/6566924/%E2%84%8F+%3D+h%2F2%CF%80.mp3",
-      cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
-    }
-  ]
+  songs: [  
+/* Tweeters, Woofers, Heavy Metal */ 
+{name: "Tweeters, Woofers, Heavy Metal",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/Tweeters-Woofers-Heavy+Metal.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+/* ℏ = h/2π */
+{name: "ℏ = h/2π",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/%E2%84%8F+%3D+h%2F2%CF%80.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+]
 });
 
 window.onkeydown = function (e) {
