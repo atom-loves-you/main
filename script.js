@@ -51,9 +51,28 @@ artist: "Atom Loves You",
 album: "Ad Astra per Aspera",
 url:"https://assets.codepen.io/6566924/%E2%84%8F+%3D+h%2F2%CF%80.mp3",
 cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+/* Lo-fi */
+{name: "Testing-Lo-fi",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/Lo+fi+.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"},
+
+/* Lo-fi */
+{name: "Testing-Call+of+the+Void+-+not+actually+-+rename+this",
+artist: "Atom Loves You",
+album: "Ad Astra per Aspera",
+url:"https://assets.codepen.io/6566924/Call+of+the+Void+-+not+actually+-+rename+this.mp3",
+cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"}
+
 ]
 });
 
 window.onkeydown = function (e) {
   return !(e.keyCode == 32);
 };
+
+
+/* https://assets.codepen.io/6566924/Lo+fi+.mp3 */
+/* https://assets.codepen.io/6566924/Call+of+the+Void+-+not+actually+-+rename+this.mp3 */
