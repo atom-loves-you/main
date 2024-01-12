@@ -197,5 +197,9 @@
   "breadcrumbs.showProperties": false,
   "breadcrumbs.showOperators": false,
   "breadcrumbs.showObjects": false,
-  "breadcrumbs.showNumbers": false
+  "breadcrumbs.showNumbers": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.snippetSuggestions": "none",
+  "editor.suggest.matchOnWordStartOnly": true
 }
