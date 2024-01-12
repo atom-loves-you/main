@@ -1,0 +1,62 @@
+{
+  "name": "atom-loves-you-tailwind-3-0-audio-player",
+  "version": "2023.12.31-21.22.42",
+  "license": "UNLICENSED",
+  "homepage": "https://atom-loves-you.com/",
+  "scripts": {
+    "build": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
+    "serve": "gulp serve -f ./build/gulpfile.js --cwd ./ --continue",
+    "task": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
+    "tasks": "gulp --tasks-simple -f ./build/gulpfile.js --cwd ./ --continue"
+  },
+  "config": {
+    "srcDir": "src/",
+    "distDir": "dist/"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "del": "^4.1.1",
+    "glob": "^7.1.4",
+    "gulp": "^4.0.2",
+    "gulp-inject-partials": "^1.0.5",
+    "gulp-rename": "^1.4.0",
+    "tailwindcss": "^3.4.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "browserslist": [
+    "last 5 version"
+  ],
+  "tasks": {
+    "partials": {
+      "order": 999,
+      "src": [
+        "**/*.template.html"
+      ],
+      "pipe": [
+        {
+          "require": "gulp-inject-partials",
+          "args": [
+            {
+              "removeTags": true,
+              "quiet": true,
+              "ignoreError": true
+            }
+          ]
+        }
+      ],
+      "rename": {
+        "find": ".template",
+        "replace": ""
+      },
+      "cleanup": [
+        "**/*.partial.html",
+        "**/*.template.html"
+      ]
+    }
+  },
+  "dependencies": {
+    "amplitudejs": "^5.3.2"
+  }
+}
