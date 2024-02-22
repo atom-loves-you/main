@@ -132,7 +132,7 @@
   "editor.guides.indentation": false,
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.largeFileOptimizations": false,
-  "editor.lightbulb.enabled": false,
+  "editor.lightbulb.enabled": "off",
   "editor.occurrencesHighlight": "off",
   "editor.pasteAs.enabled": false,
   "editor.pasteAs.showPasteSelector": "never",
