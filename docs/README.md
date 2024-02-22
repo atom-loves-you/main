@@ -1,108 +1,66 @@
-# Album Preview- Ad Astra per Aspera, 2024
+<p align="center">
+	<a href="https://521dimensions.com/open-source/amplitudejs" target="_blank">
+		<img src="https://521dimensions.com/img/open-source/amplitudejs/AmplitudeJS-NoSlogan.svg" width="600" alt="AmplitudeJS Logo">
+	</a>
+</p>
+<p align="center">
+  <a title="Documentation" href="https://521dimensions.com/open-source/amplitudejs/docs/"><strong>Documentation</strong></a>
+  &#x2022;
+  <a title="Examples" href="https://521dimensions.com/open-source/amplitudejs/docs/examples/"><strong>Examples</strong></a>
+  &#x2022;
+  <a title="Tutorials" href="https://serversideup.net/search/?tags=amplitudejs&type=all"><strong>Tutorials</strong></a>
+  &#x2022;
+</p>
 
-*New Music made with love for you by Atom Loves You*
+AmplitudeJS is a lightweight JavaScript library that allows you to control the design of your media controls in your webpage -- not the browser. No dependencies (jQuery not required). AmplitudeJS is available under the [MIT License](https://raw.githubusercontent.com/521dimensions/amplitudejs/master/LICENSE).
 
-![https://github.com/atom-loves-you/main](https://assets.codepen.io/6566924/favicon-96x96.png)
+<p align="center">
+  <a href="https://tailwindcss.com" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg">
+      <img alt="Tailwind CSS" src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg" width="350" height="70" style="max-width: 100%;">
+    </picture>
+  </a>
+</p>
 
-*<small>Click the image to follow the URL link to the main Github Repo</small>* 
-
-
----
-
-# Documentation
-
-## *Audio-Player-Version-0.1-Made with Tailwind CSS v.3.0*
-> **Last updated in 12 Jan, 2023 by K.S.**
-
-## 1: Install Tailwind CSS
-
-Install *Tailwind CSS* via npm, and create a `tailwind.config.js file`
-
-- `npm install -D tailwindcss`
-- `npx tailwindcss init`
-
----
-
-## 2: Configure the template paths
--
- Add the paths to all of your template files in the`tailwind.config.js` file.
-
-```javascript
-//tailwind.config.js
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
----
+<p align="center">
+  A utility-first CSS framework for rapidly building custom user interfaces.
+</p>
 
 
-## 3: Add the Tailwind directives to `src/input.css`
+<p align="center">
+    <a href="https://github.com/tailwindlabs/tailwindcss/actions"><img src="https://img.shields.io/github/actions/workflow/status/tailwindlabs/tailwindcss/ci.yml?branch=master" alt="Build Status"></a>
+    <a href="https://www.npmjs.com/package/tailwindcss"><img src="https://img.shields.io/npm/dt/tailwindcss.svg" alt="Total Downloads"></a>
+    <a href="https://github.com/tailwindcss/tailwindcss/releases"><img src="https://img.shields.io/npm/v/tailwindcss.svg" alt="Latest Release"></a>
+    <a href="https://github.com/tailwindcss/tailwindcss/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/tailwindcss.svg" alt="License"></a>
+</p>
 
-- Add the @tailwind directives for each of Tailwind’s layers to the main CSS file.
+------
 
+## Documentation
 
-```css
-/* input.css */
+For full documentation, visit [tailwindcss.com](https://tailwindcss.com/).
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
+## Community
 
----
+For help, discussion about best practices, or any other conversation that would benefit from being searchable:
 
+[Discuss Tailwind CSS on GitHub](https://github.com/tailwindcss/tailwindcss/discussions)
 
-## 4: Start the Tailwind CLI build process
-- Run the CLI tool to scan template files for classes and build out the CSS.
+For casual chit-chat with others using the framework:
 
+[Join the Tailwind CSS Discord Server](https://discord.gg/7NF8GNe)
 
+## Contributing
 
-```terminal
+If you're interested in contributing to Tailwind CSS, please read our [contributing docs](https://github.com/tailwindcss/tailwindcss/blob/master/.github/CONTRIBUTING.md) **before submitting a pull request**.
+
+### Start the Tailwind CLI build process
+> Run the CLI tool to scan your template files for classes and build your CSS.
+
+`src/input.css`
+
+```cmd
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
-```
-
-## 5:  Start using Tailwind in HTML
-
-- Add the compiled CSS file to the `<head>` and start using Tailwind’s utility classes to style content.
-
-
-```html
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html>
-```
-
-
-# CDN: Dev Starter
-
-```html
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html>
 ```
