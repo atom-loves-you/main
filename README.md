@@ -1,5 +1,7 @@
 # main
 
+
+<!--
 Here's a draft concept for a landing page for an indie/soft rock artist:
 
 Landing Page for [Atom Loves You]
@@ -68,3 +70,5 @@ Footer:
 Include basic contact information, a link to the privacy policy, and credits for the site (e.g., "Website by [K.S. @ Red Spring Studio]").  
 
 Push that page and then Request verification on SoundCloud, then claim Apple and Spotify profiles.
+
+-->
