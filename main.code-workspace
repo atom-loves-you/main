@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+    ],
+    "settings": {
+        "workbench.editor.enablePreview": false,
+        "files.autoSave": "onFocusChange",
+        "editor.wordWrap": "on"
+    }
+}
