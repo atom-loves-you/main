@@ -35,7 +35,7 @@
     "editor.inlayHints.enabled": "off",
     "editor.largeFileOptimizations": false,
     "editor.lightbulb.enabled": "off",
-    "editor.linkedEditing": true,
+    "editor.linkedEditing": false,
     "editor.matchBrackets": "never",
     "editor.multiCursorMergeOverlapping": false,
     "editor.occurrencesHighlight": "off",
@@ -73,5 +73,18 @@
     "scm.compactFolders": false,
     "editor.trimAutoWhitespace": false,
     "diffEditor.ignoreTrimWhitespace": true,
-    "files.trimTrailingWhitespaceInRegexAndStrings": false
+    "files.trimTrailingWhitespaceInRegexAndStrings": false,
+    "scm.autoReveal": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.find.seedSearchStringFromSelection": "never",
+    "editor.find.loop": false,
+    "search.useIgnoreFiles": false,
+    "editor.find.cursorMoveOnType": false,
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.wordBasedSuggestions": "off",
+    "css.hover.documentation": false,
+    "less.hover.documentation": false,
+    "scss.hover.documentation": false,
+    "html.hover.documentation": false
 }
