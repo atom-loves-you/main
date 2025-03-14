@@ -3,10 +3,6 @@
         {
             "name": "main",
             "path": "."
-        },
-        {
-            "name": "Lyrics",
-            "path": "../../../Desktop/Lyrics"
         }
     ],
     "settings": {
@@ -104,7 +100,20 @@
         "outline.problems.badges": false,
         "problems.visibility": false,
         "editor.unusualLineTerminators": "off",
-        "editor.autoClosingDelete": "never"
+        "editor.autoClosingDelete": "never",
+        "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "emmet.optimizeStylesheetParsing": true,
+        "editor.multiCursorMergeOverlapping": false,
+        "editor.minimap.showMarkSectionHeaders": false,
+        "emmet.showExpandedAbbreviation": "never",
+        "emmet.showAbbreviationSuggestions": false,
+        "workbench.editor.languageDetection": false,
+        "workbench.colorTheme": "Aura Dark",
+        "workbench.preferredDarkColorTheme": "Aura Dark",
+        "workbench.preferredHighContrastColorTheme": "Aura Dark",
+        "workbench.preferredLightColorTheme": "Aura Dark",
+        "npm.enableRunFromFolder": true
     },
     "extensions": {
         "recommendations": [

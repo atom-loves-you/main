@@ -72,7 +72,7 @@
     "editor.minimap.renderCharacters": false,
     "scm.compactFolders": false,
     "editor.trimAutoWhitespace": false,
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "files.trimTrailingWhitespaceInRegexAndStrings": false,
     "scm.autoReveal": false,
     "editor.suggestOnTriggerCharacters": false,
@@ -89,5 +89,12 @@
     "html.hover.documentation": false,
     "outline.collapseItems": "alwaysCollapse",
     "emmet.showAbbreviationSuggestions": false,
-    "diffEditor.experimental.showEmptyDecorations": false
+    "diffEditor.experimental.showEmptyDecorations": false,
+    "editor.minimap.showMarkSectionHeaders": false,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.suggest.showWords": true,
+    "workbench.editor.languageDetection": false,
+    "accessibility.verbosity.emptyEditorHint": false,
+    "html.format.preserveNewLines": true,
+    "npm.enableRunFromFolder": true
 }
