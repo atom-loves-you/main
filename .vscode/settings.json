@@ -63,5 +63,15 @@
     "editor.unicodeHighlight.includeStrings": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.unicodeHighlight.nonBasicASCII": false,
-    "editor.unusualLineTerminators": "off"
+    "editor.unusualLineTerminators": "off",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingComments": "never",
+    "diffEditor.renderGutterMenu": false,
+    "diffEditor.renderIndicators": false,
+    "diffEditor.renderMarginRevertIcon": false,
+    "editor.minimap.renderCharacters": false,
+    "scm.compactFolders": false,
+    "editor.trimAutoWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "files.trimTrailingWhitespaceInRegexAndStrings": false
 }

@@ -1,12 +1,49 @@
 {
 	"folders": [
-		{
-			"path": "."
-		}
+        {
+            "path": "."
+        },
+        {
+            "path": "../../../Desktop/responsive-landing-main"
+        }
     ],
     "settings": {
         "workbench.editor.enablePreview": false,
         "files.autoSave": "onFocusChange",
-        "editor.wordWrap": "on"
+        "editor.wordWrap": "on",
+        "liveServer.settings.multiRootWorkspaceName": "main",
+        "editor.rename.enablePreview": false,
+        "editor.copyWithSyntaxHighlighting": false,
+        "explorer.copyRelativePathSeparator": "/",
+        "markdown.editor.drop.copyIntoWorkspace": "never",
+        "editor.emptySelectionClipboard": false,
+        "terminal.integrated.rightClickBehavior": "nothing",
+        "editor.renderWhitespace": "none",
+        "editor.experimentalWhitespaceRendering": "off",
+        "editor.renderControlCharacters": false,
+        "editor.renderFinalNewline": "off",
+        "editor.renderLineHighlight": "none",
+        "diffEditor.renderGutterMenu": false,
+        "diffEditor.renderIndicators": false,
+        "diffEditor.renderMarginRevertIcon": false,
+        "diffEditor.renderSideBySide": true,
+        "editor.minimap.renderCharacters": false,
+        "editor.inlineSuggest.edits.renderSideBySide": "never",
+        "workbench.tree.renderIndentGuides": "none",
+        "editor.colorDecorators": false,
+        "editor.glyphMargin": false,
+        "editor.guides.indentation": false,
+        "breadcrumbs.icons": false,
+        "workbench.reduceMotion": "on",
+        "explorer.compactFolders": false,
+        "outline.icons": false,
+        "scm.compactFolders": false,
+        "terminal.integrated.customGlyphs": false,
+        "notebook.compactView": false,
+        "notebook.consolidatedOutputButton": false,
+        "notebook.globalToolbar": false,
+        "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
+        "editor.trimAutoWhitespace": false,
+        "files.trimTrailingWhitespaceInRegexAndStrings": false
     }
 }
