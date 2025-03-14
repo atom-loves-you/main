@@ -86,5 +86,7 @@
     "css.hover.documentation": false,
     "less.hover.documentation": false,
     "scss.hover.documentation": false,
-    "html.hover.documentation": false
+    "html.hover.documentation": false,
+    "outline.collapseItems": "alwaysCollapse",
+    "emmet.showAbbreviationSuggestions": false
 }
