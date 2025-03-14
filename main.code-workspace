@@ -2,6 +2,9 @@
 	"folders": [
         {
             "path": "."
+        },
+        {
+            "path": "../../../Desktop/Lyrics"
         }
     ],
     "settings": {
@@ -91,6 +94,14 @@
         "notebook.experimental.generate": false,
         "workbench.cloudChanges.autoResume": "off",
         "microsoft-sovereign-cloud.environment": "USGovernment",
-        "workbench.cloudChanges.continueOn": "off"
+        "workbench.cloudChanges.continueOn": "off",
+        "outline.problems.colors": false,
+        "problems.decorations.enabled": false,
+        "problems.autoReveal": false,
+        "outline.problems.enabled": false,
+        "outline.problems.badges": false,
+        "problems.visibility": false,
+        "editor.unusualLineTerminators": "off",
+        "editor.autoClosingDelete": "never"
     }
 }

@@ -64,7 +64,7 @@
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.unusualLineTerminators": "off",
-    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingBrackets": "languageDefined",
     "editor.autoClosingComments": "never",
     "diffEditor.renderGutterMenu": false,
     "diffEditor.renderIndicators": false,
