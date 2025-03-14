@@ -2,9 +2,6 @@
 	"folders": [
         {
             "path": "."
-        },
-        {
-            "path": "../../../Desktop/responsive-landing-main"
         }
     ],
     "settings": {
@@ -84,6 +81,16 @@
         "explorer.expandSingleFolderWorkspaces": false,
         "explorer.confirmDragAndDrop": false,
         "editor.cursorBlinking": "smooth",
-        "debug.autoExpandLazyVariables": "off"
+        "debug.autoExpandLazyVariables": "off",
+        "editor.autoClosingComments": "never",
+        "editor.experimental.asyncTokenization": false,
+        "diffEditor.experimental.showEmptyDecorations": false,
+        "multiDiffEditor.experimental.enabled": false,
+        "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
+        "extensions.experimental.issueQuickAccess": false,
+        "notebook.experimental.generate": false,
+        "workbench.cloudChanges.autoResume": "off",
+        "microsoft-sovereign-cloud.environment": "USGovernment",
+        "workbench.cloudChanges.continueOn": "off"
     }
 }

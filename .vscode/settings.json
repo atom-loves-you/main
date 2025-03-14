@@ -88,5 +88,6 @@
     "scss.hover.documentation": false,
     "html.hover.documentation": false,
     "outline.collapseItems": "alwaysCollapse",
-    "emmet.showAbbreviationSuggestions": false
+    "emmet.showAbbreviationSuggestions": false,
+    "diffEditor.experimental.showEmptyDecorations": false
 }
