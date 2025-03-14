@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "daltonmenezes.aura-theme",
+        "pkief.material-icon-theme",
+        "christian-kohler.npm-intellisense",
+        "ritwickdey.liveserver",
+        "esbenp.prettier-vscode",
+        "ecmel.vscode-html-css",
+        "sidthesloth.html5-boilerplate",
+        "leizongmin.node-module-intellisense",
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-mermaid",
+        "bierner.markdown-emoji"
+    ]
+}
