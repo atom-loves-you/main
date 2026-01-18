@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stay – Atom Loves You</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+
+  <style>
+    .magnet {
+      cursor: grab;
+      user-select: none;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
+
+<header class="sticky top-0 bg-white/80 dark:bg-neutral-900/80 backdrop-blur border-b border-neutral-200 dark:border-neutral-800">
+  <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between">
+    <a href="index.html" class="text-sm underline">← Albums</a>
+    <button onclick="toggleDarkMode()" class="text-sm px-3 py-1 rounded bg-neutral-200 dark:bg-neutral-700">
+      Light / Dark
+    </button>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto p-4 space-y-8">
+
+  <!-- Track Header -->
+  <section class="flex gap-4 items-center">
+    <img src="Album-Covers/cover-stay.png" class="w-32 h-32 rounded-xl object-cover"/>
+    <div>
+      <h1 class="text-2xl font-semibold">Stay</h1>
+      <p class="text-sm opacity-70">Single · April 4, 2025</p>
+      <p class="text-xs mt-1">Written by Khristin Schenk (Atom Loves You)</p>
+    </div>
+  </section>
+
+  <!-- Magnetic Poetry Area -->
+  <section>
+    <h2 class="text-lg font-semibold mb-2">Lyrics (Magnetic Poetry)</h2>
+
+    <div id="magnetic-area"
+         class="relative w-full h-[500px] bg-neutral-200 dark:bg-neutral-800 rounded-xl overflow-hidden p-4">
+    </div>
+  </section>
+
+  <!-- Notes -->
+  <section class="bg-white dark:bg-neutral-800 rounded-xl p-4 shadow">
+    <h2 class="text-lg font-semibold mb-2">Behind the Scenes</h2>
+    <ul class="text-sm space-y-2 list-disc list-inside">
+<!--
+      <li>Written in April 2025 during a period of emotional clarity.</li>
+      <li>The repetition mirrors intrusive thoughts looping at night.</li>
+      <li>"Stay away from me" reflects self-preservation, not rejection.</li>
+    </ul>
+-->
+
+  </section>
+
+</main>
+
+<script>
+const lyrics = `
+There’s no way to explain. When you see it all play out in your brain. Feels like something else has taken hold of you. And, I can feel myself falling apart. Now my head is spinning, but my eyes won’t close. So I will keep them open more, and I’ll keep watch. You better stay away from me. And, don’t try to come back to me again. You better stay away from me. Because now I know what I need and what I want.
+`;
+
+const area = document.getElementById('magnetic-area');
+
+lyrics.split(/\s+/).forEach(word => {
+  const span = document.createElement('span');
+  span.textContent = word;
+  span.className = "magnet bg-white dark:bg-neutral-700 px-2 py-1 rounded shadow text-sm";
+  span.style.left = Math.random() * 80 + "%";
+  span.style.top = Math.random() * 80 + "%";
+  area.appendChild(span);
+
+  let offsetX, offsetY;
+
+  span.addEventListener('mousedown', e => {
+    offsetX = e.offsetX;
+    offsetY = e.offsetY;
+
+    function move(e) {
+      span.style.left = (e.pageX - area.offsetLeft - offsetX) + "px";
+      span.style.top = (e.pageY - area.offsetTop - offsetY) + "px";
+    }
+
+    document.addEventListener('mousemove', move);
+    document.addEventListener('mouseup', () => {
+      document.removeEventListener('mousemove', move);
+    }, { once: true });
+  });
+});
+
+function toggleDarkMode() {
+  document.documentElement.classList.toggle('dark');
+}
+</script>
+
+</body>
+</html>
